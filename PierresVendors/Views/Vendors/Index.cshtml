@@ -1,0 +1,7 @@
+<h2>Your Vendors:</h2>
+<ul>
+@foreach (Vendor vendor in Model.VendorList)
+{
+<li><a href = '/vendors/@vendor.Id'>@vendor.Name</a></li>
+}
+</ul>
