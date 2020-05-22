@@ -41,7 +41,8 @@ namespace PierresVendors.Controllers
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor thisVendor = Vendor.Find(vendorId);
-      Order newOrder = new Order(orderTitle, orderDate, orderDescription, orderPrice);
+      decimal roundPrice = Math.Round(orderPrice, 2);
+      Order newOrder = new Order(orderTitle, orderDate, orderDescription, roundPrice);
       thisVendor.AddOrder(newOrder);
       List<Order> vendorOrders = thisVendor.Orders;
       model.Add("orders", vendorOrders);
