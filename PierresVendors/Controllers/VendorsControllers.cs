@@ -44,7 +44,7 @@ namespace PierresVendors.Controllers
       Order newOrder = new Order(orderTitle, orderDate, orderDescription, orderPrice);
       thisVendor.AddOrder(newOrder);
       List<Order> vendorOrders = thisVendor.Orders;
-      model.Add("order", vendorOrders);
+      model.Add("orders", vendorOrders);
       model.Add("vendor", thisVendor);
       return View("Show", model);
     }
