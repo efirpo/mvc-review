@@ -25,6 +25,4 @@
 /Users/suzannedeakins/Desktop/Epicodus/PierresVendors.Solution/PierresVendors/obj/Debug/netcoreapp2.2/PierresVendors.dll
 /Users/suzannedeakins/Desktop/Epicodus/PierresVendors.Solution/PierresVendors/obj/Debug/netcoreapp2.2/PierresVendors.pdb
 /Users/suzannedeakins/Desktop/Epicodus/PierresVendors.Solution/PierresVendors/obj/Debug/netcoreapp2.2/PierresVendors.csproj.CopyComplete
-/Users/suzannedeakins/Desktop/Epicodus/PierresVendors.Solution/PierresVendors/obj/Debug/netcoreapp2.2/Razor/Views/Orders/Index.g.cshtml.cs
 /Users/suzannedeakins/Desktop/Epicodus/PierresVendors.Solution/PierresVendors/obj/Debug/netcoreapp2.2/Razor/Views/Orders/New.g.cshtml.cs
-/Users/suzannedeakins/Desktop/Epicodus/PierresVendors.Solution/PierresVendors/obj/Debug/netcoreapp2.2/Razor/Views/Orders/Show.g.cshtml.cs

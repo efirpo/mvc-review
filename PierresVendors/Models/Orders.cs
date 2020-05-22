@@ -11,7 +11,7 @@ namespace PierresVendors.Models
     public decimal Price { get; set; }
     public int Id { get; set; }
 
-    public static List<Order> orderList = new List<Order> { };
+    private static List<Order> orderList = new List<Order> { };
 
     public Order(string title, DateTime date, string description, decimal price)
     {

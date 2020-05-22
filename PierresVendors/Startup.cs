@@ -36,7 +36,7 @@ namespace PierresVendors
 
       app.Run(async (context) =>
       {
-        await context.Response.WriteAsync("Something went wrong!");
+        await context.Response.WriteAsync("Ya Dun Goofed!");
       });
 
     }
