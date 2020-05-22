@@ -8,6 +8,7 @@ namespace PierresVendors.Models
     public string Description { get; set; }
 
     public List<Order> Orders { get; set; }
+    public int Id { get; set; }
     public static List<Vendor> VendorList { get; set; }
 
     public Vendor(string name, string description)
@@ -15,6 +16,7 @@ namespace PierresVendors.Models
       Name = name;
       Description = description;
       VendorList.Add(this);
+      Id = VendorList.Count();
 
     }
   }
