@@ -2,8 +2,10 @@
 @{
   Layout = "_Layout";
 }
-
+<div id="container">
 <h2>@Model["vendor"].Name</h2>
+<h2>Description:</h2>
+<p>@Model["vendor"].Description</p>
 <h3>Orders:</h3>
 @if (@Model["orders"].Count == 0)
 {
@@ -24,3 +26,4 @@ else
 }
 <a href='/vendors/@Model["vendor"].Id/orders/new'>Add some Orders.</a>
 <a href='/vendors'>Return to Vendors.</a>
+</div>
