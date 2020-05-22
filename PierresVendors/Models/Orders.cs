@@ -9,8 +9,23 @@ namespace PierresVendors.Models
     public DateTime Date { get; set; }
     public string Description { get; set; }
     public decimal Price { get; set; }
+    public int Id { get; set; }
 
+    public static List<Order> orderList = new List<Order> { };
 
+    public Order(string title, DateTime date, string description, decimal price)
+    {
+      Title = title;
+      Date = date;
+      Description = description;
+      Price = price;
+      orderList.Add(this);
+      Id = orderList.Count;
 
+    }
+    public static List<Order> GetAll()
+    {
+      return orderList;
+    }
   }
 }

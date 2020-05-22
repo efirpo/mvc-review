@@ -35,5 +35,18 @@ namespace PierresVendors.Controllers
       model.Add("orders", vendorOrders);
       return View(model);
     }
+
+    [HttpPost("/vendors/{vendorId}/orders")]
+    public ActionResult Create(int vendorId, string orderTitle, DateTime orderDate, string orderDescription, decimal orderPrice)
+    {
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      Vendor thisVendor = Vendor.Find(vendorId);
+      Order newOrder = new Order(orderTitle, orderDate, orderDescription, orderPrice);
+      thisVendor.AddOrder(newOrder);
+      List<Order> vendorOrders = thisVendor.Orders;
+      model.Add("orders", vendorOrders);
+      model.Add("vendors", thisVendor);
+      return View("Show", model);
+    }
   }
 }
