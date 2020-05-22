@@ -11,3 +11,12 @@ img
   width:60%;
   margin: 0 auto;
 }
+button
+{
+  color: #000000;
+}
+
+#container
+{
+font-size: 20px;
+}
