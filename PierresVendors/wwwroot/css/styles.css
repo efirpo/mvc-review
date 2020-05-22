@@ -16,6 +16,13 @@ button
   color: #000000;
 }
 
+div.card
+{
+ background-color: #515151;
+ padding: 2%;
+ margin: 2%;
+}
+
 #container
 {
 font-size: 20px;
