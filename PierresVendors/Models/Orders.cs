@@ -27,5 +27,9 @@ namespace PierresVendors.Models
     {
       return orderList;
     }
+    public static Order Find(int searchId)
+    {
+      return orderList[searchId - 1];
+    }
   }
 }

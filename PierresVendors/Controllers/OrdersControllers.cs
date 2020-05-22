@@ -7,7 +7,7 @@ namespace PierresVendors.Controllers
 {
   public class OrdersController : Controller
   {
-    [HttpGet("/vendors/{vendorId]}/orders/new")]
+    [HttpGet("/vendors/{vendorId}/orders/new")]
     public ActionResult New(int vendorId)
     {
       Vendor vendor = Vendor.Find(vendorId);
@@ -20,7 +20,7 @@ namespace PierresVendors.Controllers
       Vendor vendor = Vendor.Find(vendorId);
       Dictionary<string, object> model = new Dictionary<string, object>();
       model.Add("order", order);
-      model.Add("category", category);
+      model.Add("vendor", vendor);
       return View(model);
     }
   }

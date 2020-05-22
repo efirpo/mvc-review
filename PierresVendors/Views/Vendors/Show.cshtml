@@ -3,9 +3,9 @@
   Layout = "_Layout";
 }
 
-<h2>@Model.Name</h2>
+<h2>@Model["vendor"].Name</h2>
 <h3>Orders:</h3>
-@if (@Model.Orders.Count == 0)
+@if (@Model["orders"].Count == 0)
 {
   <p>There are no orders to show.</p>
   <p>Please <a href= '/vendors/@Model["vendor"].Id/orders/new'>add some orders.</a></p>
@@ -19,6 +19,6 @@ else
     <li>Order Date: @order.Date</li>
     <li>Order Description: @order.Description</li>
     <li>Order Price: @order.Price</li>
-    </ul>
+    </ul><br><br>
   }
 }
